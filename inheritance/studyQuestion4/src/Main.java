@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException{
-        listeleriOlustur("urunler4.txt");
+        listeleriOlustur("C:\\Users\\oguuz\\OneDrive\\Desktop\\OOP\\inheritance\\studyQuestion4\\src\\urunler4.txt");
         /*
         Beverages.list.get(2).urunStokGuncelle(true,20);
         System.out.println(Beverages.list.get(0).adi);
