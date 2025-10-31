@@ -9,13 +9,13 @@ public class Main_2433 {
     public static void main(String args[])throws IOException{
         listeleriOlustur("KargoOdev4.txt");
         kargoGrubuEkle("KargoGrubuOdev4.txt");
-        
+        menu();
     }
 
     public static void menu(){
         Scanner scanner = new Scanner(System.in);
         while(true){
-            System.out.println("---------------------");
+            System.out.println("----------------------------------------");
             System.out.println("1: TeslimSuresineGoreKargoUcretiGuncelle");
             System.out.println("2: EnHafifGonderiyeEkUcretUygula");
             System.out.println("3: ElektronikGonderiAgirlikGuncelle");
@@ -24,10 +24,92 @@ public class Main_2433 {
             System.out.println("6: OfisGonderileriniSil");
             System.out.println("7: GidaGonderisiEkle");
             System.out.println("8: Çıkış");
-            System.out.println("---------------------");
+            System.out.println("-----------------------------------------");
 
             switch (scanner.nextInt()){
-                case 1 : break;
+                case 1 :
+
+                    System.out.println("sure giriniz (girilen sureden buyuk gonderilerin ucreti guncellenecek) : ");
+                    int sure = scanner.nextInt();
+                    System.out.println("guncel ucret giriniz : ");
+                    double guncelUcret = scanner.nextDouble();
+
+                    Gonderi_2433.teslimSuresineGoreKargoUcretiGuncelle(sure,guncelUcret);
+                    break;
+
+                case 2 :
+                    System.out.println("ek ucret uygulamak icin oran degeri giriniz : ");
+                    int oran = scanner.nextInt();
+                    Gonderi_2433.enHafifGonderiyeEkUcretUygula(oran);
+
+                    break;
+
+                case 3 :
+
+                    System.out.println("miktar giriniz : ");
+                    ElektronikGonderi_2433.elektronikGonderiAgirlikGuncelle(scanner.nextDouble());
+                    break;
+
+                case 4 :
+
+                    System.out.println("index degeri giriniz : ");
+                    int index = scanner.nextInt();
+                    System.out.println("yeni sure degeri giriniz : ");
+                    int yeniSure = scanner.nextInt();
+
+                    KitapGonderi_2433.kitapGonderiSuresiGuncelle(index
+                    ,yeniSure);
+                    break;
+
+                case 5 :
+
+                    for(GiyimGonderi_2433 giyim : GiyimGonderi_2433.list){
+                        System.out.println(giyim.gonderiAdi + " --> " + giyim.detay);
+                    }
+
+                    Scanner scanner1 = new Scanner(System.in);
+                    Scanner scanner2 = new Scanner(System.in);
+
+                    System.out.println("ad giriniz : ");
+                    String ad = scanner1.nextLine();
+
+                    System.out.println("Detay giriniz : ");
+                    String detay = scanner2.nextLine();
+
+                    GiyimGonderi_2433.giyimGonderiDetayEkle(ad,detay);
+                    break;
+
+                case 6 :
+
+                    for(OfisGonderi_2433 ofis : OfisGonderi_2433.list){
+                        System.out.println(ofis.gonderiAdi + " --> " + ofis.kargoUcreti);
+                    }
+
+                    System.out.println("min ucreti giriniz : ");
+                    double max = scanner.nextDouble();
+
+                    System.out.println("max ucreti giriniz : ");
+                    double min = scanner.nextDouble();
+
+                    OfisGonderi_2433.ofisGonderileriniSil(max,min);
+                    break;
+
+                case 7 :
+
+                    Scanner scanner3 = new Scanner(System.in);
+
+                    System.out.println("ad giriniz : ");
+                    String adi = scanner3.nextLine();
+                    System.out.println("agirlik giriniz : ");
+                    double agirlik = scanner3.nextDouble();
+                    System.out.println("ucret giriniz : ");
+                    double ucret = scanner3.nextDouble();
+                    System.out.println("teslim suresi giriniz : ");
+                    int teslimSuresi = scanner3.nextInt();
+
+                    GidaGonderi_2433.gidaGonderisiEkle(adi,agirlik,ucret,teslimSuresi);
+                    break;
+
                 case 8 : return;
             }
         }
@@ -46,15 +128,15 @@ public class Main_2433 {
             }
             String dizi[] = satir.split("\t");
             switch (Integer.valueOf(dizi[1])){
-                case 1 : ElektronikGonderi_2433.list.add(new ElektronikGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),dizi[2],Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
+                case 1 : ElektronikGonderi_2433.list.add(new ElektronikGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),Double.valueOf(dizi[2]),Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
                     break;
-                case 2 : KitapGonderi_2433.list.add(new KitapGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),dizi[2],Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
+                case 2 : KitapGonderi_2433.list.add(new KitapGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),Double.valueOf(dizi[2]),Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
                     break;
-                case 3 : GiyimGonderi_2433.list.add(new GiyimGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),dizi[2],Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
+                case 3 : GiyimGonderi_2433.list.add(new GiyimGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),Double.valueOf(dizi[2]),Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
                     break;
-                case 4 : OfisGonderi_2433.list.add(new OfisGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),dizi[2],Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));;
+                case 4 : OfisGonderi_2433.list.add(new OfisGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),Double.valueOf(dizi[2]),Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));;
                     break;
-                case 5 : GidaGonderi_2433.list.add(new GidaGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),dizi[2],Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
+                case 5 : GidaGonderi_2433.list.add(new GidaGonderi_2433(dizi[0],Integer.valueOf(dizi[1]),Double.valueOf(dizi[2]),Double.valueOf(dizi[3]),Integer.valueOf(dizi[4])));
                     break;
             }
         }
@@ -72,27 +154,38 @@ public class Main_2433 {
                 ilkSatirMi = false;
                 continue;
             }
+
             String dizi[] = satir.split("\t");
             switch (Integer.valueOf(dizi[0])){
                 case 1 :
-                    ElektronikGonderi_2433.list.get(sayacElektronik).kategoriAdi = dizi[1];
-                    ElektronikGonderi_2433.list.get(sayacElektronik++).detay = dizi[2];
+                    for(ElektronikGonderi_2433 elektronik : ElektronikGonderi_2433.list){
+                        elektronik.kategoriAdi = dizi[1];
+                        elektronik.detay = dizi[2];
+                    }
                     break;
                 case 2 :
-                    KitapGonderi_2433.list.get(sayacKitap).kategoriAdi = dizi[1];
-                    KitapGonderi_2433.list.get(sayacKitap++).detay = dizi[2];
+                    for(KitapGonderi_2433 kitap : KitapGonderi_2433.list){
+                        kitap.kategoriAdi = dizi[1];
+                        kitap.detay = dizi[2];
+                    }
                     break;
                 case 3 :
-                    GiyimGonderi_2433.list.get(sayacGiyim).kategoriAdi = dizi[1];
-                    GiyimGonderi_2433.list.get(sayacGiyim++).detay = dizi[2];
+                    for(GiyimGonderi_2433 giyim : GiyimGonderi_2433.list){
+                        giyim.kategoriAdi = dizi[1];
+                        giyim.detay = dizi[2];
+                    }
                     break;
                 case 4 :
-                    OfisGonderi_2433.list.get(sayacOfis).kategoriAdi = dizi[1];
-                    OfisGonderi_2433.list.get(sayacOfis++).detay = dizi[2];
+                    for(OfisGonderi_2433 ofis : OfisGonderi_2433.list){
+                        ofis.kategoriAdi = dizi[1];
+                        ofis.detay = dizi[2];
+                    }
                     break;
                 case 5 :
-                    GidaGonderi_2433.list.get(sayacGida).kategoriAdi = dizi[1];
-                    GiyimGonderi_2433.list.get(sayacGida++).detay = dizi[2];
+                    for(GidaGonderi_2433 gida : GidaGonderi_2433.list){
+                        gida.kategoriAdi = dizi[1];
+                        gida.detay = dizi[2];
+                    }
                     break;
             }
         }
