@@ -12,7 +12,7 @@ Oyuncak Seti	2	2.3 	28.00	3
 Ev Dekor Ürünü	4	3.6 	31.75	4
 Tıbbi Ekipman	5	2.7 	55.40	2
 Telefon	1	0.8 	60.00	1
-Mutfak Takımı	3	6.2 	38.25	3
+Mutfak Takimi	3	6.2 	38.25	3
 Kırtasiye Kutusu	2	1.9 	20.40	2
 Bahçe Aleti	5	8.5 	44.10	5
 Evcil Hayvan Ürünü	4	2.1 	26.90	3

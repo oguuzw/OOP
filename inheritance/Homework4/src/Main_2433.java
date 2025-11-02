@@ -46,11 +46,15 @@ public class Main_2433 {
 
                 case 3 :
 
-                    System.out.println("miktar giriniz : ");
+                    System.out.println("agirlik miktari giriniz : ");
                     ElektronikGonderi_2433.elektronikGonderiAgirlikGuncelle(scanner.nextDouble());
                     break;
 
                 case 4 :
+
+                    for(KitapGonderi_2433 kitap : KitapGonderi_2433.list){
+                        System.out.println(kitap.gonderiAdi + "\tteslim suresi : " + kitap.teslimSuresi);
+                    }
 
                     System.out.println("index degeri giriniz : ");
                     int index = scanner.nextInt();

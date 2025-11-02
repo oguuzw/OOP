@@ -14,6 +14,11 @@ public class ElektronikGonderi_2433 extends Gonderi_2433 {
     public static void elektronikGonderiAgirlikGuncelle(double miktar){
         Random random = new Random();
 
+        System.out.println("---------- onceki agirliklar ---------");
+        for(ElektronikGonderi_2433 elektronik : list){
+            System.out.println(elektronik.gonderiAdi + "\t" + elektronik.agirlik);
+        }
+
         for(ElektronikGonderi_2433 elektronik : list){
             int arttirVeyaAzalt = random.nextInt(2);
             if(elektronik.agirlik - miktar < 0){
@@ -23,6 +28,11 @@ public class ElektronikGonderi_2433 extends Gonderi_2433 {
             } else if(arttirVeyaAzalt == 1) {
                 elektronik.agirlik -= miktar;
             }
+        }
+
+        System.out.println("---------- sonraki agirliklar ---------");
+        for(ElektronikGonderi_2433 elektronik : list){
+            System.out.println(elektronik.gonderiAdi + "\t" + elektronik.agirlik);
         }
     }
 }

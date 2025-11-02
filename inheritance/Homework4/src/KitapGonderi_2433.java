@@ -11,6 +11,11 @@ public class KitapGonderi_2433 extends Gonderi_2433 {
     public static ArrayList<KitapGonderi_2433> list = new ArrayList<>();
 
     public static void kitapGonderiSuresiGuncelle(int index, int yeniSure){
+
         list.get(index).teslimSuresi = yeniSure;
+        System.out.println("---------- yeni teslim suresi ----------");
+        for(KitapGonderi_2433 kitap : list){
+            System.out.println(kitap.gonderiAdi + "\tteslim suresi : " + kitap.teslimSuresi);
+        }
     }
 }
