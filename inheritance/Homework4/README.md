@@ -58,28 +58,28 @@ The base class from which all cargo categories inherit.
 ### Menu Options
 
 1. **Update Cargo Fee Based on Delivery Time**
-   - Updates the fee for shipments with delivery times longer than the entered time
-   - Formula: `newFee = currentFee * (1 + (deliveryTime - time) / 10.0)`
+  - Updates the fee for shipments with delivery times longer than the entered time
+  - Formula: `newFee = currentFee * (1 + (deliveryTime - time) / 10.0)`
 
 2. **Apply Additional Fee to Lightest Shipment**
-   - Finds the lightest shipment among all categories
-   - Adds an additional fee at the specified rate
+  - Finds the lightest shipment among all categories
+  - Adds an additional fee at the specified rate
 
 3. **Update Electronic Shipment Weight**
-   - Randomly increases or decreases the weights of electronic shipments
-   - Update amount is determined by the user
+  - Randomly increases or decreases the weights of electronic shipments
+  - Update amount is determined by the user
 
 4. **Update Book Shipment Time**
-   - Changes the delivery time of the book shipment at a specific index
+  - Changes the delivery time of the book shipment at a specific index
 
 5. **Add Clothing Shipment Details**
-   - Adds new detail information to the selected clothing shipment
+  - Adds new detail information to the selected clothing shipment
 
 6. **Delete Office Shipments**
-   - Removes office shipments within the specified fee range from the list
+  - Removes office shipments within the specified fee range from the list
 
 7. **Add Food Shipment**
-   - Adds a new food shipment
+  - Adds a new food shipment
 
 8. **Exit**
 
@@ -88,10 +88,10 @@ The base class from which all cargo categories inherit.
 The project uses two data files:
 
 1. **`KargoOdev4.txt`**: Contains cargo information
-   - Format: `ShipmentName | CategoryIndex | Weight | CargoFee | DeliveryTime`
+  - Format: `ShipmentName | CategoryIndex | Weight | CargoFee | DeliveryTime`
 
 2. **`KargoGrubuOdev4.txt`**: Contains category details
-   - Format: `CategoryIndex | Name | Details`
+  - Format: `CategoryIndex | Name | Details`
 
 ## 💻 Usage
 
@@ -149,5 +149,5 @@ OOP concepts used in this project:
 - [ ] Statistical analysis
 
 ---
- 
+
 **Project:** Object-Oriented Programming - Homework 4

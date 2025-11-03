@@ -96,10 +96,25 @@ This repository will be continuously updated and expanded as new topics are lear
 
 ## 💻 Technologies Used
 
-- **Language**: Java
-- **IDE**: IntelliJ IDEA / Eclipse
-- **Build System**: Maven / Gradle
-- **Version Control**: Git & GitHub
+<div align="center">
+
+### Programming Language
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+
+### Development Environment
+![Visual Studio Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
+
+### Build Tools
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+
+### Version Control
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 ## 📦 Project Highlights
 
@@ -126,13 +141,6 @@ inheritance/
 │   │   └── Main_2433.java
 │   └── README.md
 ```
-
-## 🎓 Student Information
-
-- **Student ID**: 2433
-- **Course**: Object-Oriented Programming
-- **Institution**: [Your Institution]
-- **Semester**: [Current Semester]
 
 ## 📚 Resources Used
 
@@ -268,10 +276,25 @@ Bu depo, yeni konular öğrenildikçe sürekli olarak güncellenecek ve genişle
 
 ## 💻 Kullanılan Teknolojiler
 
-- **Dil**: Java
-- **IDE**: IntelliJ IDEA / Eclipse
-- **Derleme Sistemi**: Maven / Gradle
-- **Sürüm Kontrolü**: Git & GitHub
+<div align="center">
+
+### Programlama Dili
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+
+### Geliştirme Ortamı
+![Visual Studio Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
+
+### Derleme Araçları
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+
+### Sürüm Kontrolü
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 ## 📦 Proje Özellikleri
 
@@ -298,13 +321,6 @@ kalıtım/
 │   │   └── Main_2433.java
 │   └── README.md
 ```
-
-## 🎓 Öğrenci Bilgileri
-
-- **Öğrenci No**: 2433
-- **Ders**: Nesne Yönelimli Programlama
-- **Kurum**: [Kurumunuz]
-- **Dönem**: [Mevcut Dönem]
 
 ## 📚 Kullanılan Kaynaklar
 
@@ -355,5 +371,40 @@ Bu depo, OOP öğrenme sürecimi belgelemek ve ilerlemeyi izlemek için oluştur
 
 ---
 
-© 2025 oguuzw - All rights reserved / Tüm hakları saklıdır.
-**Last Updated / Son Güncellenme**: November 3, 2025 / 3 Kasım 2025
+## 👨‍💻 Developer / Geliştirici
+
+<div align="center">
+
+<img src="https://github.com/oguuzw.png" width="150" style="border-radius: 50%;" alt="oguuzw"/>
+
+### oguuzw
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/oguuzw)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/oguuzw)
+
+**Course / Ders:** Object-Oriented Programming  
+**Focus / Odak:** Java & OOP Principles
+
+---
+
+### 📫 Contact / İletişim
+
+Feel free to reach out for questions, collaborations, or discussions about OOP!  
+Sorular, işbirlikleri veya OOP hakkında tartışmalar için benimle iletişime geçmekten çekinmeyin!
+
+</div>
+
+---
+
+## 📜 License / Lisans
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+© 2025 oguuzw - Licensed under MIT License / MIT Lisansı ile lisanslanmıştır.
+**Last Updated / Son Güncellenme**: November 4, 2025 / 4 Kasım 2025
