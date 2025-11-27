@@ -1,0 +1,6 @@
+KategoriIndex	Adi	Detay
+1	Elektronik	Elektronik ürün, parça ve cihaz içeren gönderiler
+2	Kitap	Kitap, kırtasiye ve ofis araçları
+3	Giyim	Giyim, tekstil, aksesuar ürünleri
+4	Ofis	Ev, kozmetik, dekoratif ve kişisel ürünler
+5	Gida	Gıda, içecek, beslenme veya evsel ürün gönderileri
