@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws IOException{
         listeleriOlustur("C:\\Users\\oguuz\\OneDrive\\Desktop\\OOP\\inheritance\\studyQuestion4\\src\\urunler4.txt");
-        /*
+
         Beverages.list.get(2).urunStokGuncelle(true,20);
         System.out.println(Beverages.list.get(0).adi);
         Beverages.list.get(0).urunAdiGuncelle("kahve");
         System.out.println(Beverages.list.get(0).adi);
-        */
+
 
         /*
         Beverages beverages = new Beverages(null, 0, null, 0, 0) ;
